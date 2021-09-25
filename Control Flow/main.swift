@@ -45,3 +45,26 @@ for tickMark in stride(from: 0, through: minutes, by: minuteInterval) {
     print(tickMark, terminator: " ")
 }
 print()
+
+
+//MARK: While
+print("\n//While")
+
+var index1 = 1
+
+while index1 <= 5 {
+    print(index1, terminator: " ")
+    index1 += 1
+}
+print()
+
+
+//MARK: Цикл repeat-while
+print("\n//Цикл repeat-while")
+
+index1 = 6
+
+repeat {
+    print(index1, terminator: " ")
+    index1 += 1
+} while index1 <= 5
