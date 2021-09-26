@@ -226,3 +226,14 @@ for i in 1...10 {
 }
 print()
 
+
+//MARK: Оператор Break в инструкции Switch
+print("\n//Оператор Break в инструкции Switch")
+
+for i in 1...10 {
+    if i == 5 {
+        break
+    }
+    print(i, terminator: " ")
+}
+print()
