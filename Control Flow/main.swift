@@ -188,9 +188,28 @@ switch somePoint1 {
 case (0, 0):
     print("case 1:  x,y = 0.0")
 case (let x, 0) where x == 3:
-    print("case 3:  x = 3, y = 0")
+    print("case 2:  x = 3, y = 0")
 case (let x, 0):
     print("case 2:  x = \(x), y = 0")
+case (0, let y):
+    print("case 4:  x = 0, y = \(y)")
+case (let x,let y):
+    print("case 5:  x = \(x), y = \(y)")
+}
+
+
+//MARK: Составные кейсы
+print("\n//Составные кейсы")
+
+somePoint1 = (3, 0)
+
+switch somePoint1 {
+case (0, 0):
+    print("case 1:  x,y = 0.0")
+case (let x, 0) where x == 3:
+    print("case 3:  x = 3, y = 0")
+case (let x, 0):
+    print("case 3:  x = \(x), y = 0")
 case (0, let y):
     print("case 4:  x = 0, y = \(y)")
 case (let x,let y):
