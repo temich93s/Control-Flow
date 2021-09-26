@@ -259,3 +259,24 @@ case 0:
 default:
     print("some other number")
 }
+
+
+//MARK: Маркированные инструкции
+print("\n//Маркированные инструкции")
+
+first: for x in 1...5 {
+    second: for y in 1...5 {
+        print("\(x)\(y)", terminator: " ")
+        if x == 2, y == 2 {
+            break;
+        }
+        if x == 3, y == 3 {
+            break second;
+        }
+        if x == 4, y == 4 {
+            break first;
+        }
+    }
+    print()
+}
+print()
