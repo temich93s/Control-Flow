@@ -280,3 +280,19 @@ first: for x in 1...5 {
     print()
 }
 print()
+
+
+//MARK: Ранний выход
+print("\n//Ранний выход")
+
+func someFunction(number: Int?) -> String {
+    guard var number1: Int = number else {
+        print(false)
+        return "nil"
+    }
+    number1 *= 10
+    number1 += 1
+    return String(number1)
+}
+
+print(someFunction(number: 4))
