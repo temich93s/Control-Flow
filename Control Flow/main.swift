@@ -126,3 +126,21 @@ case 0:
 default:
     print("some other number")
 }
+
+
+//MARK: Соответствие диапазону
+print("\n//Соответствие диапазону")
+
+number2 = 2
+
+switch number2 {
+case 0...9:
+    print("number2 = 0...9")
+case 10...99:
+    print("number2 = 10...99")
+case 100...999:
+    print("number2 = 100...999")
+default:
+    print("some other number")
+}
+
