@@ -68,3 +68,16 @@ repeat {
     print(index1, terminator: " ")
     index1 += 1
 } while index1 <= 5
+
+//MARK: Инструкция if
+print("\n//Инструкция if")
+
+var number2 = 8
+
+if number2 < 5 {
+    print("number2 < 5")
+} else if number2 > 10 {
+    print("number2 > 10")
+} else {
+    print("5 < number2 < 10")
+}
