@@ -103,3 +103,26 @@ case 0:
 default:
     print("some other number")
 }
+
+
+//MARK: Отсутствие case-провалов
+print("\n//Отсутствие case-провалов")
+
+number2 = 2
+
+switch number2 {
+case 1:
+    print("number2 = 1")
+case 2:
+    print("number2 = 2")
+    fallthrough
+case 3...7:
+    print("number2 = 3...7")
+case 8, 9:
+    print("number2 = 8 or 9")
+case 0:
+    print("number2 = 0")
+    print("!!!")
+default:
+    print("some other number")
+}
