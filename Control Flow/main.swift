@@ -144,3 +144,20 @@ default:
     print("some other number")
 }
 
+//MARK: Кортежи
+print("\n//Кортежи")
+
+let somePoint1 = (0, 0)
+
+switch somePoint1 {
+case (0, 0):
+    print("x,y = 0.0")
+case (_, 0):
+    print("y = 0")
+case (0, _):
+    print("x = 0")
+case (-1...1,-1...1):
+    print("-1 <= x,y <= 1")
+default:
+    print("some other point")
+}
