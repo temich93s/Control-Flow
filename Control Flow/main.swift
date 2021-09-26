@@ -147,7 +147,7 @@ default:
 //MARK: Кортежи
 print("\n//Кортежи")
 
-let somePoint1 = (0, 0)
+var somePoint1 = (0, 0)
 
 switch somePoint1 {
 case (0, 0):
@@ -160,4 +160,20 @@ case (-1...1,-1...1):
     print("-1 <= x,y <= 1")
 default:
     print("some other point")
+}
+
+//MARK: Привязка значений
+print("\n//Привязка значений")
+
+somePoint1 = (0, 1)
+
+switch somePoint1 {
+case (0, 0):
+    print("case 1:  x,y = 0.0")
+case (let x, 0):
+    print("case 2:  x = \(x), y = 0")
+case (0, let y):
+    print("case 3:  x = 0, y = \(y)")
+case (let x,let y):
+    print("case 4:  x = \(x), y = \(y)")
 }
