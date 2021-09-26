@@ -296,3 +296,13 @@ func someFunction(number: Int?) -> String {
 }
 
 print(someFunction(number: 4))
+
+
+//MARK: Проверка доступности API
+print("\n//Проверка доступности API")
+
+if #available(iOS 10, macOS 10.12, *) {
+    // Используем API iOS 10 для iOS и используем API macOS 10.12 на macOS
+} else {
+    // Используем более старые API для iOS и macOS
+}
