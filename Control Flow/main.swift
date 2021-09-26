@@ -214,3 +214,15 @@ case (let x,let y):
     print("case 4:  x = \(x), y = \(y)")
 }
 
+
+//MARK: Оператор Continue
+print("\n//Оператор Continue")
+
+for i in 1...10 {
+    if (i % 2) == 0 {
+        continue
+    }
+    print(i, terminator: " ")
+}
+print()
+
